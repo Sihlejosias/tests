@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HTML Document</title>
+    <title>Control Panel</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -11,17 +11,15 @@
     </header>
     <section>
         <div>
-
-            <button class="btn green">Load</button>
-            <button class="btn orange">Train</button>
-            <button class="btn purple">Deploy</button>
-           <!--  <a href="control.html" class="control">Load Data</a>
-            <a href="control.html" class="control orange">Train Model</a>
-            <a href="control.html" class="control purple">Deplay</a> -->
+            <button class="btn green" onclick="load()">Load</button>
+            <button class="btn orange" onclick="train()">Train</button>
+            <button class="btn purple" onclick="deploy()">Deploy</button>
         </div>
     </section>
     <footer>
         2022 &copy; All Rights Reserved.
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>

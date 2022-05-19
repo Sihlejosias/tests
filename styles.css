@@ -110,21 +110,12 @@ hr {
 }
 
 ::-webkit-file-upload-button {
-	width: 30px;
-	height: 30px;
-	border-radius: 50px;
-	background: green;
+	border-top-left-radius: 1rem;
+	border-bottom-left-radius: 1rem;
 	border: none;
+	font-weight: bolder;
+	text-transform: uppercase;
 	cursor: pointer;
-}
-
-::-webkit-file-upload-button::before {
-	content: " ";
-	background: url(./assest/download.svg);
-	border-radius: 50%;
-	width: 20px;
-	height: 20px;
-	z-index: 10000;
 }
 
 .desktop input[type="text"], button {

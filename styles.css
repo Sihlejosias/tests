@@ -18,12 +18,14 @@ header img {
 	width: 5rem;
 	height: 5rem;
 	padding: 1rem;
+	margin-left: 2rem;
 }
 
 section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	height: 80vh;
 }
 
@@ -80,3 +82,73 @@ footer {
 	padding-top: 1rem;
 }
 
+hr {
+	background-color: black;
+	width: 20rem;
+	height: 1px;
+	margin-top: .5rem;
+	margin-left: 1px;
+}
+
+.diva {
+	display: flex;
+	flex-direction: row;
+}
+
+.desktop input {
+	border: 1px solid hotpink;
+	padding: .2rem;
+	border-radius: 1rem;
+	width: 500px;
+	text-align: center;
+	margin-left: 5rem;
+}
+
+.desktop input[type="file"] {
+	position: relative;
+	bottom: 7rem;
+}
+
+::-webkit-file-upload-button {
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;
+	background: green;
+	border: none;
+	cursor: pointer;
+}
+
+::-webkit-file-upload-button::before {
+	content: " ";
+	background: url(./assest/download.svg);
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	z-index: 10000;
+}
+
+.desktop input[type="text"], button {
+	position: relative;
+	top: 5rem;
+}
+
+button {
+	border-radius: 50%;
+	margin-left: 1rem;
+	margin-top: .5rem;
+	width: 40px;
+	height: 40px;
+	border: none;
+	background-color: rgba(0, 154, 23, 1);
+	cursor: pointer;
+}
+
+button img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	color: white;
+	position: relative;
+	right: 8.7rem;
+	top: .2rem;
+}

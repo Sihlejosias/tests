@@ -9,7 +9,7 @@ def sdk_checker(sdk_check):
     adb_fastboot = input("adb or fastboot: ")
     if adb_fastboot == "adb" or adb_fastboot == "fastboot":
         command = "where" if platform.system() == "Windows" else 'which'
-        sdk_check = subprocess.run((command, adb_fastboot), stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        sdk_check = subprocess.run((command, adb_fastboot), stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, universal_newlines=None)
         if sdk_check == sdk_check:
             # print(sdk_check.stdout.decode('utf-8'), end="")
             return sdk_check.stdout
